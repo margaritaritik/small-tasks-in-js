@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.trafficLightsDiv{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /*top: 270px;*/
+}
+.circleRedDiv{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90px;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-name: lightRed;
+    -webkit-animation-iteration-count: infinite;
+}
+#circleRed{
+    width: 80px;
+    height: 80px;
+    background: red;
+    border-radius: 50%;
+
+}
+.circleYellowDiv{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-name: lightYellow;
+    -webkit-animation-iteration-count: infinite;
+}
+#circleYellow{
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    border-radius: 50%;
+
+}
+.circleGreenDiv{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 306px;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-name: lightGreen;
+    -webkit-animation-iteration-count: infinite;
+}
+#circleGreen{
+    width: 80px;
+    height: 80px;
+    background: green;
+    border-radius: 50%;
+
+}
+
+@-webkit-keyframes lightRed{
+    0%{color: red}
+    20%{color: red}
+    40%{color:red;}
+    60%{color: #5d2828;}
+    80%{color: #5d2828;}
+    100%{color: #5d2828;}
+}
+@-webkit-keyframes lightYellow{
+    0%{color: #67673e;}
+    20%{color: #67673e;}
+    40%{color: #ffff00;}
+    50%{color: #67673e;;}
+    60%{color: #67673e;}
+    80%{color: #67673e;}
+    100%{color: #67673e;}
+}
+@-webkit-keyframes lightGreen{
+    0%{color: #151a19;}
+    20%{color: #151a19;}
+    40%{color: #151a19;}
+    60%{color: #00ff00
+    }
+    80%{color: #00ff00
+    }
+    85%{color: #151a19;}
+    90%{color: #00ff00
+    }
+    95%{color: #151a19;}
+    100%{color: #00ff00
+    }
+}

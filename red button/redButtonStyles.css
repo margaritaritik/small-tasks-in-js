@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(158, 216, 243);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.containerTimer{
+    display: flex;
+    justify-content: center;
+}
+.count{
+    margin-top: 5%;
+    font-size: 35px;
+}
+#buttonRed{
+    width: 200px;
+    height: 200px;
+    background: red;
+    font-size: 30px;
+}
