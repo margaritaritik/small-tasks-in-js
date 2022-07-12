@@ -19,10 +19,6 @@ function sortirovka(){
     while(divCount.firstChild) {
         console.log("jgvdsc");
         divCount.removeChild(divCount.firstChild);
-
-        // divCount[0].parentNode.removeChild(divCount[0]);
-        // elementDelete.childNodes[j].removeChild;
-        // divCount.children[j].remove;
     }
     list.sort((prev, next) => next.count - prev.count);
     for(let i=0;i<list.length;i++)
@@ -37,8 +33,6 @@ function sortirovka(){
     }
 
 }
-
-
 function onkeypress(e) {
     str = messageBox.value;
 }
@@ -54,8 +48,6 @@ function onkeydown(e) {
             if(words[words.length-1]===list[i]['name']){
                 list[i]['count']++;
                  sortirovka();
-                // const countEl=document.getElementById(list[i]['countId']);
-                // countEl.textContent=list[list.length-1]['name']+' - '+list[i]['count'];
                 flag=true;
                 break;
             }
